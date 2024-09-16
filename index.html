@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FORM SECTION -->
+
+    <div class="form">
+        <form>
+        <h1 class="heading">Application Form</h1>
+        <h5>FILL IN YOUR DETAILS</h5>
+
+        <label>FULL NAME:</label>
+        <input type="text" name="" id="fullName" required> 
+
+        <label>FATHER'S NAME:</label>
+        <input type="text" name="" id="fatherName" required>
+
+        <label>ROLL NUMBER:</label>
+        <input type="number" name="" id="rollNumber" required>
+
+        <label>EMAIL ADDRESS:</label>
+        <input type="email" name="" id="email" required>
+
+        <label>PHONE NUMBER:</label>
+        <input type="number" name="" id="phoneNo" required>
+
+        <label>DATE OF BIRTH:</label>
+        <input type="date" name="" id="doBirth" required>
+
+        <input type="button" value="Clear" class="button" id="clear" onclick="clearValue ()">
+        <input type="button" value="SUBMIT" class="button" id="submit" onclick="submitValue ()">
+        <input type="button" value="Clear-All" class="button" id="clearAll" onclick="">
+        
+        </form>
+    
+        <!-- RESULTS SECTION -->
+
+        <div class="resutls" id="result"> 
+            <p class="para">
+                RESULTS Will Be Displayed Below After Submission
+            </p>
+            
+            <p class="output" id="output">
+                
+            </p>
+            <p class="output" id="output2">
+                <p></p>
+            </p>
+            <p class="output" id="output3">
+
+            </p>
+            <p class="output" id="output4">
+
+            </p>
+            <p class="output" id="output5">
+
+            </p>
+            <p class="output" id="output6">
+
+            </p>
+        </div> 
+    </div>    
+
+        <script src="app.js"></script>
+</body>
+</html>
