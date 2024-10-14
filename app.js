@@ -21,7 +21,7 @@ function takeInupts(){
     forPassword.push(YourPassword);
 
     document.getElementById('showText').innerHTML = `
-    <h2>Your Details Are Here</h2>
+    <h2>Your Information</h2>
     <p><b>Full Name:</b> ${forFullName}</p>
     <p><b>Email :</b> ${forEmail}</p>
     <p><b>Phone Number :</b>  ${forPhoneNumber}</p>
@@ -38,12 +38,12 @@ function pop(){
     forPassword.pop();
 
     document.getElementById('showText').innerHTML = `
-    <h2>Your Details is here</h2>
+    <h2>Your Information</h2>
     <p><b>Full Name:</b> ${forFullName}</p>
     <p><b>Email :</b> ${forEmail}</p>
     <p><b>Phone Number :</b>  ${forPhoneNumber}</p>
     <p><b>Password :</b> ${forPassword}</p>
-    <p class='last'><strong>Design by Muhammad Waqas,  Roll No. 263696</strong></p>`;
+    <p class='last'>Made By Syed Kumail Naqvi</p>`;
   
 };
 
