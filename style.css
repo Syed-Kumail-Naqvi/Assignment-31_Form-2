@@ -1,104 +1,167 @@
-* {
-    margin: 0;
+
+*{
+
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family:"Lato", sans-serif;
+
+}
+
+.outer-box{
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #363636;
+    min-width: 410px;
+    padding-block: 40px;
+}
+
+
+.inner-box{
+
+    width: 450px;
+    position: relative;
+    padding: 30px 20px;
+    box-shadow: 3px 3px 5px  rgb(17, 206, 17);
+    background: linear-gradient(to top left, white ,rgba(255, 255, 255, 0.205));
+    backdrop-filter: blur(15px);
+    z-index: 2;
+
+}
+
+
+.signup-header h1{
+    font-size: 2.5rem;
+    color: #131010;
+    text-align: center;
+}
+
+.signup-header p{
+
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 600;
+}
+
+.signup-body{
+
+    margin: 20px 0;
+
+}
+
+.signup-body .input{
+
+    margin: 10px 0;
+
+}
+
+.signup-body .input label{
+
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+.signup-body>form>.input>input{
+
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 1rem;
+    margin-top: 5px;
+
+}
+
+.button{
+
+    border: none;
+    background-color: rgb(6, 65, 6);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 5px;
+
+}
+
+.twoButtons{
+
+    display: flex;
+    gap: 15px;
+}
+
+.button:hover{
+
+    background-color: rgb(12, 150, 12);
     
 }
-body {
-    background-image: url(https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?cs=srgb&dl=pexels-pixabay-326055.jpg&fm=jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+
+#showText{
+
+    width: 450px;
+    padding: 30px 20px;
+    box-shadow: 3px 3px 5px  rgb(17, 206, 17);
+    background: linear-gradient(to top left, white ,rgba(255, 255, 255, 0.205));
+    backdrop-filter: blur(10px);
+    z-index: 2;
 
 }
-.heading {
+
+#showText h2{
+
     text-align: center;
-    font-weight: normal;
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    text-shadow: 2px 2px 10px;
-}
-.form {
-    margin-top: 20px;
-    /* background: url(https://cdn.wallpapersafari.com/16/68/LrlFxh.jpg); */
-    width: 100%;
-    display: grid;
-    place-items: center;
-    color: white;
-}
-form {
-    /* display: block; */
-    box-sizing: border-box;
-    padding: 40px;
-    width: 400px;
-    height: 100%;
-    backdrop-filter: brightness(40%);
-    flex-direction: column;
-    display: flex;
-    /* justify-content: center; */
-    gap: 5px;
-    border: 1px solid black;
-    box-shadow: 0px 0px 20px;
-    border-radius: 40px;
-    transition: scale linear 0.5s;
-}
-form:hover {
-    scale: 1.1;
+    margin-block: 20px 50px;
+    font-size: 1.7rem;
+    color: #131010;
+
 }
 
-h5 {
+#showText p{
+
+    margin-block: 48px;
+    font-size: 1.2rem;
+
+}
+
+#showText .last{
+
+    margin-block: 100px 50px;
     text-align: center;
-    font-weight: normal;
-    font-size: 14px;
-    margin-bottom: 60px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    text-shadow: 2px 2px 10px;
-}
-label {
-    color: rgba(255, 255, 255, 0.8);
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: 2px;
-    padding-left: 10px;
-}
-input {
-    background: rgba(255, 255, 255, 0.3);
-    height: 40px;
-    line-height: 40px;
-    border-radius: 20px;
-    padding: 0px 20px;
-    border: none;
-    margin-bottom: 20px;
-    color: white;
-}
-.button {
-    background: transparent;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 40px;
-    border: 2px solid white;
-    margin: 10px 0px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-    color: white;
-    font-size: 12px;
-    text-transform: uppercase;
+
 }
 
-.results {
-    display: flex;
-    flex-direction: column;
-    text-shadow: 2px 2px 10px;
-    color: white;
+/* Tablet */
+@media (min-width:425px) and (max-width:768px){
+
+    .outer-box{
+
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+    
 }
-.para {
-    margin-top: 50px;
-}
-.output {
-    margin-top: 20px;
-    font-size: 15px;
-    color: white;
-    text-shadow: 2px 2px 10px;    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+@media (max-width:425px){
+
+    .outer-box{
+
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .inner-box,#showText {
+
+        width: 300px;
+    }
+    
 }
